@@ -79,6 +79,7 @@
     width: 650px;
     height: 200px;
     display: grid;
+    grid-template-columns: 2fr 3fr;
     background: linear-gradient(to right, #D4B996, #aa7651);
     border: 2px solid #aa7651; 
     background-size: cover;
@@ -167,5 +168,3 @@
        padding-left: 30px;
     }
 }
-
-
