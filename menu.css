@@ -79,7 +79,7 @@
     width: 650px;
     height: 200px;
     display: grid;
-    background: linear-gradient(to right bottom, #ffd5a9, #a76a3e);
+    background: linear-gradient(to right, #D4B996, #aa7651);
     border: 2px solid #aa7651; 
     background-size: cover;
     border-radius: 15px;
@@ -167,4 +167,5 @@
        padding-left: 30px;
     }
 }
+
 
