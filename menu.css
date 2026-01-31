@@ -1,0 +1,170 @@
+:root {
+    --primary: #6F4E37;       /* Коричневый (кофейный) */
+    --secondary: #D4B996;     /* Бежевый/кремовый */
+    --accent: #C9A959;        /* Золотистый акцент */
+    --dark: #3E2723;          /* Тёмно-коричневый */
+    --text: #2C1810;          /* Текст */
+    --white: #FFFFFF;
+
+
+
+    --font-heading: 'Playfair Display', serif;     /* Заголовки */
+    --font-body: 'Inter', sans-serif;              /* Основной текст */
+}
+
+
+
+.hero h1 {
+    text-align: center;
+    color: var(--primary);
+    font-family: --;
+}
+
+.line-menu {
+    width: 150px;
+    height: 3px;
+    border-radius: 40px;
+    background: linear-gradient(to left, #aa7651, #e9c8a4, #aa7651, #e9c8a4);
+    margin-top: -10px;
+    box-shadow: 0 5px 10px #aa7651;
+    border: none;
+}
+
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.menu-nav button {
+    width: 130px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    border-radius: 15px;
+    padding: 7px;
+    background: linear-gradient(to right, #D4B996, #aa7651);
+    color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #6F4E37;
+}
+
+.menu-nav button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px #aa7651;
+}
+
+
+.click-button {
+    box-shadow: 0 10px 20px #aa7651;
+}
+
+.not-click-button {
+    box-shadow: none;
+}
+
+
+.menu-position {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.menu-position :is(.one, .two, .three, .four) {
+    width: 650px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background: linear-gradient(to right, #ffd5a9, #a76a3e);
+    border: 2px solid #aa7651; 
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    color: var(--primary);
+    transition: transform 0.4s, box-shadow 0.3s;
+}
+
+.menu-position :is(.one, .two, .three, .four):hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px #a06135;
+}
+
+.menu-position :is(.one img, .two img, .three img, .four img) {
+    width: 80%;
+    justify-self: end;
+}
+
+.menu-position :is(.one h3, .two h3, .three h3, .four h3) {
+    font-size: 21px;
+    text-align: center;
+    margin-left: 70px;
+}
+
+
+.menu-position :is(.one p, .two p, .three p, .four p) {
+    font-size: 18px;
+
+    margin-left: 70px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+@media (max-width: 1024px) {
+    .menu-position {
+        height: 700px;
+    }
+
+    .menu-position p {
+        position: relative;
+        text-align: left;
+        right: 30px;
+        bottom: 8px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+    .menu-nav {
+        margin: 50px 10px 0 10px;
+    }
+
+    .menu-nav button {
+        font-size: 19px;
+    }
+
+    .menu-position {
+        height: auto;
+    }
+
+    .menu-position :is(.one, .two, .three, .four) {
+        width: 350px;
+        height: 320px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 40%;
+        overflow: hidden;
+    }
+
+    .menu-position :is(.one, .two, .three, .four) img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .menu-position :is(.one, .two, .three, .four) h3 {
+        padding-right: 70px;
+    }
+
+    .menu-position :is(.one, .two, .three, .four) p {
+       margin: 0px;
+       padding-left: 30px;
+    }
+}
